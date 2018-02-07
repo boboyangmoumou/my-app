@@ -1,0 +1,28 @@
+.menuWrapper{
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    flex: 1;
+}
+.login{
+    flex: 1;
+    text-align: center;
+}
+.Nav {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(223, 219, 219);
+    box-shadow: 0 0 3px 0 rgba( 0, 0, 0, .2);
+}
+.Nav ul{
+    display: flex;
+    flex-direction: row;
+}
+.Nav ul li{
+    flex: 1;
+    text-align: center;
+
+}

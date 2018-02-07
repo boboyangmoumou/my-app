@@ -5,12 +5,44 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "antd": "^3.2.0",
+    "axios": "^0.17.1",
+    "ejs": "^2.5.7",
+    "fetch": "^1.1.0",
+    "file-loader": "^1.1.6",
+    "http-proxy": "^1.16.2",
+    "img-loader": "^2.0.1",
+    "mongoose": "^5.0.3",
+    "qs": "^6.5.1",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2"
+  },
+  "proxy": {
+    "/goods": {
+      "target": "http://localhost:3001",
+      "changeOrigin": true
+    }
   }
 }
