@@ -22,8 +22,19 @@ router.all('*',function (req,res,next) {
     res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
     next();
 });
-router.get("/", function (req,res,next) {
-    Goods.find({}, function(err,data){
+router.get("/list", function (req,res,next) {
+    let page = parseInt(req.param("page"));//获取页码
+    let pageSize = parseInt(req.param("pageSize")); //一页几条数据
+    // let priceLevel = req.param("priceLevel");
+    let sort = req.param("sort");//排序
+    let skip = (page-1)*pageSize;//默认跳过几条数据  skip是索引值
+    // var priceGt= '',priceLte='';
+    let params = {};
+    let goodsModel  = Goods.find(params).skip(skip).limit(pageSize);//返回一个model
+    goodsModel.sort({'salePrice':sort});
+    goodsModel.exec(function(err,doc) {
+    // })
+    // Goods.find({}, function(err,doc){
         if(err){
             res.json({
                 status: '1',
@@ -34,12 +45,13 @@ router.get("/", function (req,res,next) {
                 status: '0',
                 msg: '',
                 result: {
-                    count: data.length,
-                    list: data
+                    count: doc.length,
+                    list: doc
                 }
             })
         }
-    })
+    });
+
 })
 
 module.exports = router;

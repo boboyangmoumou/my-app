@@ -9,6 +9,7 @@ import Header from './redux/components/header';
 import ShopCart from './redux/components/shopCart';
 import Address from './redux/components/address';
 
+import './style/app.css';
 export default class App extends React.Component{
     render() {
         return (

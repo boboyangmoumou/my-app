@@ -1,0 +1,44 @@
+.handleLine{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #F1F1F1;
+}
+.f-price-set{
+    float: left;
+}
+.f1{
+    display: inline-block
+}
+.f1 input{
+    width: 52px;
+    height: 30px;
+    line-height: 30px;
+    border-color: #ccc;
+    color: #333;
+    display: block;
+    outline: none;
+    border: 1px solid #eee;
+}
+.f-price-set em{
+    display: inline-block;
+    width: 12px;
+    line-height: 23px;
+    color: #333;
+    text-align: center;
+}
+.changePrice{
+    width: 52px;
+    height: 30px;
+    border: 1px solid #eee;
+    background: #ccc;
+    display: block;
+}
+.cuurPrice {
+    height: 40px;
+    width: 52px;
+    line-height: 30px;
+    float: left;
+    margin-top: 5px; 
+    margin-left: 20px;
+}
