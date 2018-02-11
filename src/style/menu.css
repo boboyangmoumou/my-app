@@ -14,7 +14,7 @@
 .Nav {
     height: 40px;
     line-height: 40px;
-    background-color: rgb(223, 219, 219);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 3px 0 rgba( 0, 0, 0, .2);
 }
 .Nav ul{
@@ -24,5 +24,22 @@
 .Nav ul li{
     flex: 1;
     text-align: center;
-
+}
+.Nav ul li a{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 22px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 33px;
+    color: #333;
+    font-weight: 700;
+}
+.Nav ul li a:hover{
+    background: #f30213;
+    overflow: visible;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
 }

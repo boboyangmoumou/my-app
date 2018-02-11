@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {LocaleProvider, Datepicker, message } from 'antd';
+import zhCN from 'antd/lib/locale-provider/zh_CN';
+import moment from 'moment';
+import 'moment/locale/zh-cn';
 
 import {
     createStore
@@ -12,6 +16,7 @@ import {
 import App from './App.js';
 import changeMnunt from './redux/reducers/index.js';
 let store = createStore(changeMnunt);
+moment.locale('zh-cn');
 
 export default class Root extends React.Component {
     render() {

@@ -12,7 +12,7 @@ export default class MenuLineTop extends React.Component{
                     <em> - </em>
                     <div className="f1"><input type="text" value="¥"/></div>
                 </div>
-                <div className="cuurPrice">
+                <div className="cuurPrice" onClick={(e) => this.sortGoods(e)}>
                     <a href="javascript:;" className="changePrice">
                         <span>价格</span>
                         <i>^</i>
