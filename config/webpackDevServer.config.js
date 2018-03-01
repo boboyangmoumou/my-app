@@ -1,4 +1,4 @@
-'use strict';
+
 
 const errorOverlayMiddleware = require('react-dev-utils/errorOverlayMiddleware');
 const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware');
@@ -87,6 +87,13 @@ module.exports = function(proxy, allowedHost) {
           pathRewrite: {
             '^/v2': '/v2'
           }
+      },
+      "/users":{
+        "target": "http://localhost:3001",
+        "changeOrigin": true,
+        pathRewrite: {
+          '^/v2': '/v2'
+        }
       }
     },
     before(app) {

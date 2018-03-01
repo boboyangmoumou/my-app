@@ -22,9 +22,9 @@ const userSchema = new mongoose.Schema({
             "streetName": String,
             "postCode": Number,
             "tel": Number,
-            "isDefault": Boolean
+            "isDefault": Boolean               
         }
     ]
 });
 
-module.exports = mongoose.model("User",userSchema);
+module.exports = mongoose.model("User",userSchema,'users');

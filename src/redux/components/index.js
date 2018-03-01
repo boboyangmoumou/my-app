@@ -106,8 +106,11 @@ class Index extends React.Component {
         },500)
     }
     // 价格区间过滤
-    priceFilter(){
-        alert(1);
+    // priceFilter(){
+    //     alert(1);
+    // }
+    priceFilter(e){
+        
     }
     render() {
         const {newsItem,priceFilterList} = this.state;
@@ -124,7 +127,7 @@ class Index extends React.Component {
             </div>
         )):"none"
         const priceFilter = ({key}) => {
-            // message.info(`Click on item ${key}`);
+            message.info(`click on item ${key}`)
             let {priceChecked} = this.state;
             priceChecked = `${key}`;            
             this.setState({
@@ -133,14 +136,13 @@ class Index extends React.Component {
             })
             this.newFetch();
         }
-        const priceFilterListChild= priceFilterList.map((Item,index) => (
-            <Menu.Item key={index}>
-                {Item.startPrice} - {Item.endPrice}
-            </Menu.Item>
-        ))
         const menu=(
             <Menu onClick={priceFilter}>
-               {priceFilterListChild}
+               {priceFilterList.map((Item,index) => (
+                <Menu.Item key={index}>
+                    {Item.startPrice} - {Item.endPrice}
+                </Menu.Item>
+                ))}
             </Menu>
         )
         return(
@@ -180,7 +182,6 @@ const mapDispatchToProps = dispatch => {
         
     }    
 }
-
 
 export default connect(
     undefined,

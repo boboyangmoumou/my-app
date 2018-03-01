@@ -1,0 +1,76 @@
+{
+    "data": {
+        "projectTree": [{
+                "org_p_name": null,
+                "org_c_name": "方直",
+                "list": [{
+                        "user_type": "1",
+                        "proj_id": "39e42de8-ac7f-5370-d968-77a5aa66ecd5",
+                        "proj_name": "风控测试1",
+                        "org_c_id": "11B11DB4-E907-4F1F-8835-B9DAAB6E1F23",
+                        "org_c_name": "方直",
+                        "org_p_id": null,
+                        "org_p_name": null,
+                        "user_id": "39e3a822-2ad8-87e1-ef22-1b7cb3982f1c",
+                        "token": "vwvmjp1457763919"
+                    },
+                    {
+                        "user_type": "1",
+                        "proj_id": "39e414f0-713d-1202-7a8a-2028f72e3064",
+                        "proj_name": "数据中心自动化公司",
+                        "org_c_id": "11B11DB4-E907-4F1F-8835-B9DAAB6E1F23",
+                        "org_c_name": "方直",
+                        "org_p_id": null,
+                        "org_p_name": null,
+                        "user_id": "39e3a822-2ad8-87e1-ef22-1b7cb3982f1c",
+                        "token": "vkcypj1415069022"
+                    }
+                ]
+            },
+            {
+                "org_p_name": "方直",
+                "org_c_name": "曹勤测试",
+                "list": [{
+                        "user_type": "1",
+                        "proj_id": "39d61a73-fe48-9a39-c358-8d8980f08b4c",
+                        "proj_name": "高红交易测试项目",
+                        "org_c_id": "39dcbc6e-7b5f-69ba-9b41-2e29bda3600d",
+                        "org_c_name": "曹勤测试",
+                        "org_p_id": "11B11DB4-E907-4F1F-8835-B9DAAB6E1F23",
+                        "org_p_name": "方直",
+                        "user_id": "39e3a822-2ad8-87e1-ef22-1b7cb3982f1c",
+                        "token": "vwvmjp1457763919"
+                    },
+                    {
+                        "user_type": "1",
+                        "proj_id": "39d61ef6-d00f-208a-19fb-38796a1e298b",
+                        "proj_name": "上行客户机会",
+                        "org_c_id": "39dcbc6e-7b5f-69ba-9b41-2e29bda3600d",
+                        "org_c_name": "曹勤测试",
+                        "org_p_id": "11B11DB4-E907-4F1F-8835-B9DAAB6E1F23",
+                        "org_p_name": "方直",
+                        "user_id": "39e3a822-2ad8-87e1-ef22-1b7cb3982f1c",
+                        "token": "vwvmjp1457763919"
+                    }
+                ]
+            },
+            {
+                "org_p_name": "方直",
+                "org_c_name": "江门珑湖湾置业有限公司",
+                "list": [{
+                    "user_type": "1",
+                    "proj_id": "372226f0-c22d-4cf8-808c-73f0f2fef4a3",
+                    "proj_name": "方直东岸",
+                    "org_c_id": "39cc8ad7-e245-3ee8-95da-5caa444c0cf4",
+                    "org_c_name": "江门珑湖湾置业有限公司",
+                    "org_p_id": "11B11DB4-E907-4F1F-8835-B9DAAB6E1F23",
+                    "org_p_name": "方直",
+                    "user_id": "39e3a822-2ad8-87e1-ef22-1b7cb3982f1c",
+                    "token": "vwvmjp1457763919"
+                }]
+            }
+        ]
+    },
+    "retCode": 0,
+    "errMsg": ""
+}
